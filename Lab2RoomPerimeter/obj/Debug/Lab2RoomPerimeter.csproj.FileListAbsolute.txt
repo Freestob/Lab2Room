@@ -1,0 +1,7 @@
+C:\Users\frees\source\repos\Lab2RoomPerimeter\Lab2RoomPerimeter\obj\Debug\Lab2RoomPerimeter.csprojAssemblyReference.cache
+C:\Users\frees\source\repos\Lab2RoomPerimeter\Lab2RoomPerimeter\obj\Debug\Lab2RoomPerimeter.csproj.CoreCompileInputs.cache
+C:\Users\frees\source\repos\Lab2RoomPerimeter\Lab2RoomPerimeter\bin\Debug\Lab2RoomPerimeter.exe.config
+C:\Users\frees\source\repos\Lab2RoomPerimeter\Lab2RoomPerimeter\bin\Debug\Lab2RoomPerimeter.exe
+C:\Users\frees\source\repos\Lab2RoomPerimeter\Lab2RoomPerimeter\bin\Debug\Lab2RoomPerimeter.pdb
+C:\Users\frees\source\repos\Lab2RoomPerimeter\Lab2RoomPerimeter\obj\Debug\Lab2RoomPerimeter.exe
+C:\Users\frees\source\repos\Lab2RoomPerimeter\Lab2RoomPerimeter\obj\Debug\Lab2RoomPerimeter.pdb
