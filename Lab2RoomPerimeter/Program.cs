@@ -10,19 +10,25 @@ namespace Lab2RoomPerimeter
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("This program will display the area and the perimeter for a room in which you enter the dimensions.");
-           
-            double roomLength, roomWidth;
+            
+               Console.WriteLine("This program will display the area and the perimeter for a room in which you enter the dimensions.");
 
-            roomLength = GetLength();
-            roomWidth = GetWidth();
+                double roomLength, roomWidth, roomHeight;
 
-            double roomArea = roomLength * roomWidth;
-            double roomPerimeter = roomLength * 2 + roomWidth * 2;
+                roomLength = GetLength();
+                roomWidth = GetWidth();
+                roomHeight = GetHeight();
 
-            Console.WriteLine("\n" + "The area of the room is " + roomArea + " feet.");
-            Console.WriteLine("\n" + "The perimeter of the room is " + roomPerimeter + " feet.");
-            Console.ReadLine();
+                double roomArea = roomLength * roomWidth;
+                double roomPerimeter = roomLength * 2 + roomWidth * 2;
+                double roomVolume = roomLength * roomWidth * roomHeight;
+
+                Console.WriteLine("\n" + "The area of the room is " + roomArea + " feet.");
+                Console.WriteLine("\n" + "The perimeter of the room is " + roomPerimeter + " feet.");
+                Console.WriteLine("\n" + "The volume of the room is " + roomVolume + " feet.");
+                Console.WriteLine("Do you want to run again (Y/N)? ");
+            
+               
 
         }
             static double GetLength()
@@ -56,5 +62,21 @@ namespace Lab2RoomPerimeter
                 return GetWidth();
 
             }
+        static double GetHeight()
+        {
+            string userHeight;
+            double roomHeight;
+            Console.WriteLine("Please enter the height of the room in feet.");
+            userHeight = Console.ReadLine();
+            bool succes = double.TryParse(userHeight, out roomHeight);
+            if (succes == true)
+            {
+                return roomHeight;
+            }
+            else
+                Console.WriteLine("Please enter in a valid number");
+            return GetHeight();
+
+        }
     }
 }
