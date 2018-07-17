@@ -30,7 +30,7 @@ namespace Lab2RoomPerimeter
 
                 Console.WriteLine("Do you want to run again (Y/N)? ");
                 
-                if (Console.ReadLine().ToLower() != "yes")
+                if (Console.ReadLine().ToLower() != "y")
                     break;
             }   
         }
@@ -38,7 +38,7 @@ namespace Lab2RoomPerimeter
             {
                 string userLength;
                 double roomLength;
-                Console.WriteLine("Please enter the length of the room in feet.");
+                Console.WriteLine("\n" + "Please enter the length of the room in feet.");
                 userLength = Console.ReadLine();
                 bool succes = double.TryParse(userLength, out roomLength);
                 if (succes == true)
@@ -46,14 +46,14 @@ namespace Lab2RoomPerimeter
                     return roomLength;
                 }
                 else
-                    Console.WriteLine("Please enter in a valid number");
+                    Console.WriteLine("\n" + "Please enter in a valid number");
                     return GetLength();
             }
             static double GetWidth()
             {
                 string userWidth;
                 double roomWidth;
-                Console.WriteLine("Please enter the width of the room in feet.");
+                Console.WriteLine("\n" + "Please enter the width of the room in feet.");
                 userWidth = Console.ReadLine();
                 bool succes = double.TryParse(userWidth, out roomWidth);
                 if (succes == true)
@@ -61,7 +61,7 @@ namespace Lab2RoomPerimeter
                     return roomWidth;
                 }
                 else
-                    Console.WriteLine("Please enter in a valid number");
+                    Console.WriteLine("\n" + "Please enter in a valid number");
                 return GetWidth();
 
             }
@@ -69,7 +69,7 @@ namespace Lab2RoomPerimeter
         {
             string userHeight;
             double roomHeight;
-            Console.WriteLine("Please enter the height of the room in feet.");
+            Console.WriteLine("\n" + "Please enter the height of the room in feet.");
             userHeight = Console.ReadLine();
             bool succes = double.TryParse(userHeight, out roomHeight);
             if (succes == true)
@@ -77,7 +77,7 @@ namespace Lab2RoomPerimeter
                 return roomHeight;
             }
             else
-                Console.WriteLine("Please enter in a valid number");
+                Console.WriteLine("\n" + "Please enter in a valid number");
             return GetHeight();
 
         }
