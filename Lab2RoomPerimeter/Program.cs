@@ -10,12 +10,12 @@ namespace Lab2RoomPerimeter
     {
         static void Main(string[] args)
         {
-            
-               Console.WriteLine("This program will display the area and the perimeter for a room in which you enter the dimensions.");
-
+              Console.WriteLine("This program will display the area and the perimeter for a room in which you enter the dimensions.");
+            while (true)
+            {
                 double roomLength, roomWidth, roomHeight;
-             
-            
+
+
                 roomLength = GetLength();
                 roomWidth = GetWidth();
                 roomHeight = GetHeight();
@@ -29,10 +29,10 @@ namespace Lab2RoomPerimeter
                 Console.WriteLine("\n" + "The volume of the room is " + roomVolume + " feet.");
 
                 Console.WriteLine("Do you want to run again (Y/N)? ");
-            
-            
-               
-
+                
+                if (Console.ReadLine().ToLower() != "yes")
+                    break;
+            }   
         }
             static double GetLength()
             {
